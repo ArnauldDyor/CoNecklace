@@ -3,6 +3,9 @@ Medical assistance through a connected necklace
 
 
 ## Description
+<img src="images/coNecklace.png" height=22%  width=22%  alt="<3?" ALIGN="right">
+<br><br>
+
 CoNecklace is a connected necklace for senior, especially for those who live alone.
 It's able to alert the emergency in case of a heart attack, a stroke or even a ceasure.
 
