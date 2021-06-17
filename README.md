@@ -25,7 +25,10 @@ It's able to alert the emergency in case of a heart attack, a stroke or even a c
     <ul>The necklace call/alert a service when there are heart attack symptoms. The employee reach out the client to make sure things are ok(just like an alarm security service) before deciding to call the emergency</ul>
   </li>
   <li>Global positioning system(GPS)
-    <ul></ul>
+    <ul>Being able to locate a patient/client at any times day and night</ul>
+  </li>
+  <li>Alert and reminder tool
+    <ul>Seniors might sometimes forget to take their medicine. CoNecklace includes that feature which remind them of a physician's appointment or just alert them on the right time on taking medication</ul>
   </li>
 </ul>
 
