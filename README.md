@@ -39,6 +39,8 @@ It's able to alert the emergency in case of a heart attack, a stroke or even a c
 | alert and reminder tool | alert on taking medication period and even remind physician's appointment |
 | RFID sensor | remote data recovery and backup |
 
+![materials](images/git.png)
+
 
 ## Links
 [Circuit Tinkercad](https://www.tinkercad.com/things/csltpiHFjnu-amazing-snaget-vihelmo/editel?tenant=circuits)
