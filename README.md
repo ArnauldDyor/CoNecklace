@@ -28,3 +28,13 @@ It's able to alert the emergency in case of a heart attack, a stroke or even a c
     <ul></ul>
   </li>
 </ul>
+
+
+## Composants list
+| Composant | Role |
+| --- | ---------------|
+| GPS microchip | locate the patient at all times |
+| heart rate sensor| locate the patient at all times |
+| sleep tracking sensor | track the patient's sleep behaviour |
+| alert and reminder tool | alert on taking medication period and even remind physician's appointment |
+| RFID sensor | remote data recovery and backup |
