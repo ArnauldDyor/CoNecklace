@@ -9,8 +9,6 @@ int LEDpin = 8;
 LiquidCrystal lcd(10, 9, 8, 6, 5, 3);
 // adresse du BP1 (bouton poussoir 1) 
 int Bp1 = 2;
-// adresse du Buzzer (PIN) 
-int BUZZER_PIN = 4;
 // variable de l'etat de l'appui sur le BP1
 int appui_bp1 = 0;
 // variable pour son
@@ -20,18 +18,16 @@ float temps = 500;
 //variable de calcul du temps de fonctionnement du buzzer
 float duree = 0;
 float frequenc = 120;
-// adresse du Vibreur (PIN) 
-int vibreur = 12;
 String demande = "";
 // adresse du led rouge (PIN) 
-int pin_led_rouge = 7;
+int pin_led = 7;
 
 void setup()
 {
   //initialiser le moniteur série
   Serial.begin(9600);
   //initialiser la LED
-  pinMode(pin_led_rouge, OUTPUT);
+  pinMode(pin_led, OUTPUT);
   //initialiser la photorésistance
   pinMode(PHOTOpin, INPUT);
   //initialisation de l'écran LCD
@@ -48,9 +44,9 @@ void loop()
   Serial.println(sensor);
   
   //Clignotement de ma LED
-  digitalWrite(LEDpin, HIGH); // la LED s'allume
+  digitalWrite(pin_led, HIGH); // la LED s'allume
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(LEDpin, LOW); // la led s'éteind
+  digitalWrite(pin_led, LOW); // la led s'éteind
   delay(1000); // Wait for 1000 millisecond(s)
   
   // Récupération de l'état du bouton poussoir
@@ -60,9 +56,7 @@ void loop()
     duree = 0;
     float frequenc;
     while (duree < temps * 1000) {
-      digitalWrite(BUZZER_PIN, HIGH);
       delayMicroseconds(demi_periode);
-      digitalWrite(BUZZER_PIN, LOW);
       delayMicroseconds(demi_periode);
       duree = duree + 2 * demi_periode;
     }
